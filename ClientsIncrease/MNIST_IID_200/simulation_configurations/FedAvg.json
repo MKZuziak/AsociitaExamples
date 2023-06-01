@@ -1,0 +1,32 @@
+{
+    "orchestrator": {
+        "iterations": 50,
+        "number_of_nodes": 200,
+        "local_warm_start": false,
+        "sample_size": 80,
+        "optimizer": {},
+        "metrics_save_path": "None",
+        "archiver":{
+            "orchestrator": true,
+            "clients_on_central": true,
+            "central_on_local": true,
+            "log_results": true,
+            "save_results": true,
+            "save_orchestrator_model": false,
+            "save_nodes_model": false,
+            "metrics_savepath": "None",
+            "orchestrator_filename": "None",
+            "clients_on_central_filename": "None",
+            "central_on_local_filename": "None",
+            "orchestrator_model_save_path": "None",
+            "nodes_model_save_path": "None"},
+        "nodes": []
+    },
+    "nodes":{
+    "local_epochs": 5,
+    "model_settings": {
+        "optimizer": "RMS",
+        "batch_size": 32,
+        "learning_rate": 0.01}
+        }
+}
